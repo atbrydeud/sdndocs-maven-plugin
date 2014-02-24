@@ -1,6 +1,5 @@
 package com.rackspace.cloud.api.docs;
 
-import java.io.InputStream;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
@@ -15,7 +14,6 @@ import org.apache.maven.plugin.MojoExecutionException;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.util.zip.ZipException;
 import java.util.zip.ZipOutputStream;
 
 

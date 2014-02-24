@@ -3,15 +3,15 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.rackspace.cloud.api</groupId>
-    <artifactId>clouddocs-maven-plugin</artifactId>
+    <groupId>com.inocybe.api</groupId>
+    <artifactId>sdndocs-maven-plugin</artifactId>
 
-    <name>Cloud API Docs Plugin</name>
+    <name>API and Guide Docbook Plugin</name>
 
-    <version>1.13.1-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
 
-    <url>https://github.com/rackerlabs/clouddocs-maven-plugin</url>
+    <url>https://github.com/inocybe/sdndocs-maven-plugin</url>
     <licenses>
       <license>
         <name>Apache License, Version 2.0</name>
@@ -21,13 +21,13 @@
     </licenses>
     <developers>
       <developer>
-        <name>David Cramer</name>
-        <email>david.cramer@rackspace.com</email>
+        <name>Mathieu Lemay</name>
+        <email>mlemay@inocybe.com</email>
       </developer>
-      <developer>
-        <name>Sam Harwell</name>
-        <email>sam.harwell@rackspace.com</email>
-      </developer>
+        <developer>
+            <name>Arash Eghtesadi</name>
+            <email>aeghtesade@inocybe.com</email>
+        </developer>
     </developers>
 
     <parent>
@@ -48,7 +48,7 @@
     </properties>
 
     <description>
-        Generates a XHTML and API documents.
+        Generates a XHTML and API documents based off Rackspace initial Plugin.
     </description>
 
     <dependencies>
@@ -406,7 +406,7 @@
                 <configuration>
                     <transformationSets>
                         <transformationSet>
-                            <dir>src/main/resources/cloud/fo/titlepage</dir>
+                            <dir>src/main/resources/sdn/fo/titlepage</dir>
                             <stylesheet>target/docbook/template/titlepage.xsl</stylesheet>
                             <outputDir>target/generated-resources/cloud/fo</outputDir>
                             <fileMappers>
@@ -416,7 +416,7 @@
                             </fileMappers>
                         </transformationSet>
                         <transformationSet>
-                            <dir>src/main/resources/cloud/webhelp/titlepage</dir>
+                            <dir>src/main/resources/sdn/webhelp/titlepage</dir>
                             <stylesheet>target/docbook/template/titlepage.xsl</stylesheet>
                             <outputDir>target/generated-resources/cloud/webhelp</outputDir>
                             <fileMappers>

@@ -88,7 +88,7 @@ public class PDFBuilder {
 	private static final String COVER_IMAGE_TEMPLATE_NAME = "cover.st";
 	private static final String COVER_IMAGE_NAME = "cover.svg";
 
-	private static final String COVER_XSL = "cloud/cover.xsl";
+	private static final String COVER_XSL = "sdn/cover.xsl";
 
 	// configure fopFactory as desired
 	private String inputFilename = null; 
@@ -818,7 +818,7 @@ public class PDFBuilder {
 
 
 	protected String getNonDefaultStylesheetLocation() {
-		return "cloud/fo/docbook.xsl";
+		return "sdn/fo/docbook.xsl";
 	}
 	/**
 	 * Returns the URL of the default stylesheet.

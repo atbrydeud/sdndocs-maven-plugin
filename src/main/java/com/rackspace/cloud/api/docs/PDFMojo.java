@@ -3,9 +3,6 @@ package com.rackspace.cloud.api.docs;
 import com.agilejava.docbkx.maven.AbstractFoMojo;
 import com.agilejava.docbkx.maven.PreprocessingFilter;
 import com.agilejava.docbkx.maven.TransformerBuilder;
-import com.rackspace.cloud.api.docs.CalabashHelper;
-import com.rackspace.cloud.api.docs.FileUtils;
-import com.rackspace.cloud.api.docs.GlossaryResolver;
 
 import org.antlr.stringtemplate.StringTemplate;
 import org.antlr.stringtemplate.StringTemplateGroup;
@@ -42,12 +39,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.MalformedURLException;
-import java.net.*;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
-import java.util.Set;
 
 public abstract class PDFMojo extends AbstractFoMojo {
     private File imageDirectory;
@@ -60,7 +53,7 @@ public abstract class PDFMojo extends AbstractFoMojo {
     private static final String COVER_IMAGE_TEMPLATE_NAME = "cover.st";
     private static final String COVER_IMAGE_NAME = "cover.svg";
 
-    private static final String COVER_XSL = "cloud/cover.xsl";
+    private static final String COVER_XSL = "sdn/cover.xsl";
 
     /**
      * @parameter expression="${project.build.directory}"
@@ -243,7 +236,7 @@ public abstract class PDFMojo extends AbstractFoMojo {
     }
 
     protected String getNonDefaultStylesheetLocation() {
-        return "cloud/fo/docbook.xsl";
+        return "sdn/fo/docbook.xsl";
     }
 
 

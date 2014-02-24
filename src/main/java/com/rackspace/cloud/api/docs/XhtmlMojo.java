@@ -1,6 +1,5 @@
 package com.rackspace.cloud.api.docs;
 
-import com.rackspace.cloud.api.docs.FileUtils;
 import com.agilejava.docbkx.maven.AbstractHtmlMojo;
 import com.agilejava.docbkx.maven.PreprocessingFilter;
 import com.agilejava.docbkx.maven.TransformerBuilder;
@@ -9,7 +8,6 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.xml.transform.stream.StreamSource;
 import javax.xml.transform.Source;
 import javax.xml.transform.URIResolver;
 
@@ -218,7 +216,7 @@ public abstract class XhtmlMojo extends AbstractHtmlMojo {
 
     protected String getNonDefaultStylesheetLocation() {
 	// Is this even used?
-        return "cloud/war/copy.xsl";
+        return "sdn/war/copy.xsl";
     }
 
     protected void setXslDirectory (File xslDirectory) {

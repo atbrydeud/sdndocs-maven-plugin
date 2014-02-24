@@ -2,13 +2,11 @@ package com.rackspace.cloud.api.docs;
 
 import com.agilejava.docbkx.maven.AbstractHtmlMojo;
 import com.agilejava.docbkx.maven.PreprocessingFilter;
-import com.agilejava.docbkx.maven.TransformerBuilder;
 import org.apache.maven.plugin.MojoExecutionException;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.xml.transform.stream.StreamSource;
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
 
@@ -38,7 +36,7 @@ public abstract class HTMLMojo extends AbstractHtmlMojo {
      */
     private String security;
     protected String getNonDefaultStylesheetLocation() {
-      return "cloud/apipage/apipage.xsl";
+      return "sdn/apipage/apipage.xsl";
     }
 
     @Override

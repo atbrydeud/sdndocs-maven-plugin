@@ -10,7 +10,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javax.xml.transform.sax.SAXSource;
-import javax.xml.transform.stream.StreamSource;
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.URIResolver;
@@ -78,7 +77,7 @@ public abstract class ApiRefMojo extends AbstractHtmlMojo {
     }
 
     protected String getNonDefaultStylesheetLocation() {
-      return "cloud/apipage/apipage.xsl";
+      return "sdn/apipage/apipage.xsl";
     }
 
     public void postProcessResult(File result) throws MojoExecutionException {

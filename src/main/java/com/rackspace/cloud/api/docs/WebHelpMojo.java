@@ -1,12 +1,10 @@
 package com.rackspace.cloud.api.docs;
 
-import java.net.*;
 import java.io.File;
 import java.io.IOException;
 import java.io.StringReader;
 import java.io.FileInputStream;
 import java.io.InputStream;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -37,14 +35,7 @@ import com.agilejava.docbkx.maven.PreprocessingFilter;
 import com.agilejava.docbkx.maven.TransformerBuilder;
 import com.rackspace.cloud.api.docs.builders.PDFBuilder;
 
-import com.rackspace.cloud.api.docs.CalabashHelper;
-import com.rackspace.cloud.api.docs.DocBookResolver;
-
-import com.agilejava.docbkx.maven.Parameter;
-import com.agilejava.docbkx.maven.FileUtils;
-
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.zip.ZipOutputStream;
 
 public abstract class WebHelpMojo extends AbstractWebhelpMojo {
@@ -59,7 +50,7 @@ public abstract class WebHelpMojo extends AbstractWebhelpMojo {
     private File sourceDocBook;
     private File atomFeed;
     private File atomFeedClean;
-    private static final String COPY_XSL = "cloud/webhelp/copy.xsl";
+    private static final String COPY_XSL = "sdn/webhelp/copy.xsl";
 
       /**
        * A reference to the project.
@@ -586,7 +577,7 @@ public abstract class WebHelpMojo extends AbstractWebhelpMojo {
 
     //Note for this to work, you need to have the customization layer in place.
     protected String getNonDefaultStylesheetLocation() {
-        return "cloud/webhelp/profile-webhelp.xsl";
+        return "sdn/webhelp/profile-webhelp.xsl";
     }
 
     public void postProcessResult(File result) throws MojoExecutionException {

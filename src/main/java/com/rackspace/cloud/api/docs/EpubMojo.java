@@ -8,7 +8,6 @@ import javax.xml.transform.stream.StreamSource;
 
 import org.apache.batik.transcoder.TranscoderInput;
 import org.apache.batik.transcoder.TranscoderOutput;
-import org.apache.batik.transcoder.image.JPEGTranscoder;
 import org.apache.batik.transcoder.image.PNGTranscoder;
 import org.apache.maven.plugin.MojoExecutionException;
 import java.io.File;
@@ -19,11 +18,7 @@ import java.util.Properties;
 import org.apache.maven.artifact.Artifact;
 import org.apache.maven.project.MavenProject;
 import org.apache.tools.ant.Target;
-import org.xml.sax.XMLReader;
-import org.xml.sax.SAXException;
 
-import org.codehaus.plexus.archiver.Archiver;
-import org.codehaus.plexus.archiver.manager.ArchiverManager;
 import org.codehaus.plexus.archiver.zip.ZipArchiver;
 import org.codehaus.plexus.util.FileUtils;
 
@@ -49,7 +44,7 @@ public abstract class EpubMojo
     private static final String COVER_IMAGE_TEMPLATE_NAME = "cover.st";
     private static final String COVER_IMAGE_NAME = "cover.svg";
 
-    private static final String COVER_XSL = "cloud/cover.xsl";
+    private static final String COVER_XSL = "sdn/cover.xsl";
 
     /**
      * The plugin dependencies.
