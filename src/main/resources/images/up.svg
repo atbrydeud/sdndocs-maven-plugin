@@ -1,11 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-<g>
-	<rect x="15.888" y="25.328" fill="#FCB813" width="17.043" height="13.742"/>
-	<polygon fill="#ED3024" points="7.402,25.304 24.438,8.269 41.473,25.304 	"/>
-	<polygon fill="#F48120" points="32.931,25.328 24.424,33.836 15.916,25.328 	"/>
-</g>
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 9.0, SVG Export Plug-In  -->
+<!DOCTYPE svg [
+	<!ENTITY st0 "fill:none;stroke:none;">
+	<!ENTITY st1 "fill:#FFFFFF;stroke:#FFFFFF;stroke-width:7.5901;stroke-linejoin:round;">
+	<!ENTITY st2 "fill-rule:nonzero;clip-rule:nonzero;stroke:#000000;stroke-miterlimit:4;">
+	<!ENTITY st3 "stroke:none;">
+]>
+<svg  width="48pt" height="48pt" viewBox="0 0 48 48" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+	<g id="Layer_x0020_3" style="&st2;">
+		<g>
+			<path style="&st1;" d="M41.1,25.6c0.3,0,0.3-0.3,0.2-0.5L24.4,8.4c-0.5-0.5-0.7-0.4-1,0L6.7,25.1c-0.1,0.1-0.1,0.4,0.1,0.4h10v13.6c0,0.3,0.2,0.5,0.4,0.5l13.3,0c0.3,0,0.5-0.2,0.5-0.5V25.5l10.1,0.1z"/>
+			<path style="&st3;" d="M41.1,25.6c0.3,0,0.3-0.3,0.2-0.5L24.4,8.4c-0.5-0.5-0.7-0.4-1,0L6.7,25.1c-0.1,0.1-0.1,0.4,0.1,0.4h10v13.6c0,0.3,0.2,0.5,0.4,0.5l13.3,0c0.3,0,0.5-0.2,0.5-0.5V25.5l10.1,0.1z"/>
+		</g>
+	</g>
+	<g id="crop_x0020_marks" style="&st2;">
+		<path style="&st0;" d="M48,48H0V0h48v48z"/>
+	</g>
 </svg>

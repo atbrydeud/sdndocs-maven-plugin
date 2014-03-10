@@ -21,3 +21,4 @@ target
 # NetBeans user-specific build actions
 nbactions.xml
 nbactions-*.xml
+/target
