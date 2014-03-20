@@ -8,7 +8,7 @@
 
     <name>API and Guide Docbook Plugin</name>
 
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.1.0</version>
     <packaging>maven-plugin</packaging>
 
     <url>https://github.com/inocybe/sdndocs-maven-plugin</url>
@@ -48,10 +48,11 @@
 
     <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <java6.home>${env.JAVA6_HOME}</java6.home>
-      <bootclasspath.java6>${java6.home}/lib/rt.jar</bootclasspath.java6>
-      <bootclasspath.compile>${bootclasspath.java6}</bootclasspath.compile>
-      <bootclasspath.testCompile>${bootclasspath.java6}</bootclasspath.testCompile>
+      <release.arguments></release.arguments>
+      <java.home>${env.JAVA_HOME}</java.home>
+      <bootclasspath.java>${java.home}/jre/lib/rt.jar</bootclasspath.java>
+      <bootclasspath.compile>${bootclasspath.java}</bootclasspath.compile>
+      <bootclasspath.testCompile>${bootclasspath.java}</bootclasspath.testCompile>
       <!-- Need to exclude this because the description includes Unicode characters,
            and docbkx-tools doesn't support specifying the encoding. -->
       <excluded.properties>annotation.graphic.close</excluded.properties>
@@ -263,7 +264,7 @@
       <url>https://github.com/inocybe/sdndocs-maven-plugin/tree/master</url>
       <connection>scm:git:git://github.com/inocybe/sdndocs-maven-plugin.git</connection>
       <developerConnection>scm:git:git@github.com:inocybe/sdndocs-maven-plugin.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>sdndocs-maven-plugin-0.1.0</tag>
   </scm>
 
     <profiles>
@@ -271,20 +272,6 @@
         <id>sonatype-oss-release</id>
           <build>
           <plugins>
-            <plugin>
-  <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-gpg-plugin</artifactId>
-          <version>1.1</version>
-          <executions>
-            <execution>
-              <id>sign-artifacts</id>
-              <phase>verify</phase>
-              <goals>
-                <goal>sign</goal>
-              </goals>
-            </execution>
-          </executions>
-           </plugin>
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-compiler-plugin</artifactId>
