@@ -262,7 +262,7 @@
 
    <scm>
       <url>https://github.com/inocybe/sdndocs-maven-plugin/tree/master</url>
-      <connection>scm:git:git://github.com/inocybe/sdndocs-maven-plugin.git</connection>
+      <connection>scm:git:git@github.com:inocybe/sdndocs-maven-plugin.git</connection>
       <developerConnection>scm:git:git@github.com:inocybe/sdndocs-maven-plugin.git</developerConnection>
       <tag>sdndocs-maven-plugin-0.1.0</tag>
   </scm>
