@@ -172,11 +172,12 @@ set       toc,title
 
   <xsl:param name="enable.disqus">0</xsl:param>
   <xsl:param name="disqus_identifier" select="/*/@xml:id"/>
-  <xsl:param name="disqus.shortname">
+<xsl:param name="disqus.shortname">
     <xsl:choose>
       <xsl:when test="$branding = 'rackspace'">rc-api-docs</xsl:when>
       <xsl:when test="$branding = 'rackspace-private-cloud'">rackspaceprivateclouddocs</xsl:when>
       <xsl:when test="$branding = 'openstack'">openstackdocs</xsl:when>
+      <xsl:when test="$branding = 'opendaylight'">opendaylight</xsl:when>
     </xsl:choose>
       
   </xsl:param>
@@ -185,12 +186,16 @@ set       toc,title
     <xsl:choose>
       <xsl:when test="$branding = 'openstack'">OpenStack</xsl:when>
       <xsl:when test="$branding = 'repose'">Repose</xsl:when>
+      <xsl:when test="$branding = 'opendaylight'">OpenDaylight</xsl:when>
+      <xsl:when test="$branding = 'inocybe'">Inocybe Technologies</xsl:when>
       <xsl:otherwise>Rackspace</xsl:otherwise>
     </xsl:choose>
   </xsl:param>
   <xsl:param name="main.docs.url">
     <xsl:choose>
       <xsl:when test="$branding = 'openstack'">http://docs.openstack.org/</xsl:when>
+      <xsl:when test="$branding = 'opendaylight'">http://docs.opendaylight.org/</xsl:when>
+      <xsl:when test="$branding = 'inocybe'">http://docs.inocybe.com/</xsl:when>
       <xsl:when test="$branding = 'repose'">http://openrepose.org/documentation.html</xsl:when>
       <xsl:otherwise>
 	<xsl:choose>
@@ -200,7 +205,7 @@ set       toc,title
       </xsl:otherwise>
     </xsl:choose>
   </xsl:param>
-  
+    
   <xsl:param name="use.version.for.disqus">0</xsl:param>
     <xsl:variable name="version.for.disqus">
         <xsl:choose>
@@ -381,6 +386,7 @@ ERROR: Feedback email not set but internal comments are enabled.
 	    <xsl:choose>
 		<xsl:when test="$branding = 'openstack'">http://www.openstack.org</xsl:when>
 		<xsl:when test="$branding = 'repose'">http://www.openrepose.org</xsl:when>
+		<xsl:when test="$branding = 'opendaylight'">http://www.opendaylight.org</xsl:when>
 		<xsl:otherwise>http://www.rackspace.com</xsl:otherwise>
 	      </xsl:choose>
 	    </xsl:attribute>

@@ -12,7 +12,7 @@
    version="1.1"
    id="svg2"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="cover.svg"
+   sodipodi:docname="opendaylight-cover.st"
    x="0px"
    y="0px"
    width="765px"
@@ -935,10 +935,11 @@
      style="fill:#ed3024" /><text
      font-size="35.0422"
      id="text3577"
-     x="10"
-     y="390"
-     style="font-size:35.04219818px;fill:#ffffff;font-family:MyriadPro-BoldCond"><tspan
-       style="font-size:36px"
+     x="8.3286524"
+     y="460.60373"
+     style="font-size:29.18543053px;fill:#ffffff;font-family:MyriadPro-BoldCond"
+     transform="scale(1.2006744,0.83286527)"><tspan
+       style="font-size:29.98315048px"
        id="tspan3515">$title$</tspan></text>
 <text
      xml:space="preserve"
@@ -973,10 +974,11 @@
 <text
      font-size="35.0422"
      id="text3577-7"
-     x="10"
-     y="430"
-     style="font-size:35.04219818px;fill:#ffffff;font-family:MyriadPro-BoldCond"><tspan
-       style="font-size:26px"
+     x="9.1121998"
+     y="470.41153"
+     style="font-size:31.93115234px;fill:#ffffff;font-family:MyriadPro-BoldCond"
+     transform="scale(1.0974298,0.91122)"><tspan
+       style="font-size:23.69171906px"
        id="tspan3513">$subtitle$</tspan></text>
 <text
      id="text2749"

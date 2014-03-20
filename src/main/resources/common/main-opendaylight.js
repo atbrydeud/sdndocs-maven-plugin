@@ -96,7 +96,7 @@ function syncToc(){
     if (a != undefined) {
         var b = a.getElementsByTagName("a")[0];
 
-        if (b != undefined) {
+          if (b != undefined) {
             //Setting the background for selected node.
             var style = a.getAttribute("style", 2);
             if (style != null && !style.match(/background-color: Background;/)) {
@@ -209,7 +209,7 @@ function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){return ua
 /* End CSS Browser Selector code */
 
 function logABug(bugTitle, fieldComment){
-    var urlBase = "https://bugs.launchpad.net/openstack-manuals/+filebug?field.title="	    
+    var urlBase = "https://bugs.opendaylight.org/+filebug?field.title="	    
     var bugLink = urlBase  + encodeURIComponent(bugTitle) + "&field.comment=" + lineFeed + lineFeed + "-----------------------------------" + lineFeed + fieldComment; 
    document.getElementById("logABugLink1").href=bugLink;
    document.getElementById("logABugLink2").href=bugLink;    

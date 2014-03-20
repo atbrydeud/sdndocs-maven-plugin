@@ -35,7 +35,14 @@
       <xsl:otherwise>CartoGothic Std</xsl:otherwise>
     </xsl:choose>
   </xsl:param>
-
+  
+  <xsl:param name="font.color">
+    <xsl:choose>
+    <xsl:when test="$branding = 'opendaylight'">rgb(238,49,36)</xsl:when>
+    <xsl:otherwise>rgb(37,41,112)</xsl:otherwise>
+    </xsl:choose>
+  </xsl:param>
+ 
   <xsl:param name="monospace.font.family">
     <xsl:choose>
       <xsl:when test="starts-with(/*/@xml:lang, 'zh')">AR-PL-New-Sung</xsl:when>
@@ -99,6 +106,7 @@ set       toc,title
       </xsl:otherwise>
     </xsl:choose>
   </xsl:param>
+  
   <xsl:param name="show.comments">
     <xsl:choose>
       <xsl:when test="$security = 'reviewer' or $security = 'writeronly'">1</xsl:when>
@@ -107,7 +115,7 @@ set       toc,title
   </xsl:param>
 
   <xsl:param name="insert.xref.page.number">yes</xsl:param>
-
+ 
   <xsl:param name="status.bar.text">
     <xsl:call-template name="pi-attribute">
       <xsl:with-param name="pis" select="/*/processing-instruction('rax')"/>
@@ -147,7 +155,7 @@ set       toc,title
           </xsl:otherwise>
       </xsl:choose>
   </xsl:variable>
-
+  
   <xsl:variable name="titleabbrev">
       <xsl:choose>
           <xsl:when test="/*/d:titleabbrev">
@@ -217,11 +225,11 @@ set       toc,title
   <!-- Title Properties (Sections/Components) -->
   <xsl:attribute-set name="component.title.properties">
     <xsl:attribute name="font-family"><xsl:value-of select="$rackspace.font"/></xsl:attribute>
-    <xsl:attribute name="color">rgb(238,49,36)</xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of select="$font.color"/></xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="section.title.properties">
-    <xsl:attribute name="color">rgb(238,49,36)</xsl:attribute>
+    <xsl:attribute name="color"><xsl:value-of select="$font.color"/></xsl:attribute>
     <xsl:attribute name="font-family"><xsl:value-of select="$rackspace.font"/></xsl:attribute>
   </xsl:attribute-set>
 
@@ -234,12 +242,12 @@ set       toc,title
   </xsl:attribute-set>
 
   <xsl:attribute-set name="formal.title.properties">
-      <xsl:attribute name="color">rgb(238,49,36)</xsl:attribute>
+      <xsl:attribute name="color"><xsl:value-of select="$font.color"/></xsl:attribute>
       <xsl:attribute name="font-family"><xsl:value-of select="$rackspace.font"/></xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="admonition.title.properties">
-      <xsl:attribute name="color">rgb(238,49,36)</xsl:attribute>
+      <xsl:attribute name="color"><xsl:value-of select="$font.color"/></xsl:attribute>
       <xsl:attribute name="font-family"><xsl:value-of select="$rackspace.font"/></xsl:attribute>
   </xsl:attribute-set>
 

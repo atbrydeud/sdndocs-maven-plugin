@@ -3,9 +3,9 @@
 <!ENTITY hsize0 "10pt">
 <!ENTITY hsize1 "12pt">
 <!ENTITY hsize2 "14.4pt">
-<!ENTITY hsize3 "17.28pt">
-<!ENTITY hsize4 "20.736pt">
-<!ENTITY hsize5 "24.8832pt">
+<!ENTITY hsize3 "16.28pt">
+<!ENTITY hsize4 "18.736pt">
+<!ENTITY hsize5 "21.8832pt">
 <!ENTITY hsize0space "7.5pt"> <!-- 0.75 * hsize0 -->
 <!ENTITY hsize1space "9pt"> <!-- 0.75 * hsize1 -->
 <!ENTITY hsize2space "10.8pt"> <!-- 0.75 * hsize2 -->
@@ -1126,7 +1126,7 @@
 	     start-indent="0pt"
 	     font-size="&hsize4;"
 	     font-weight="bold"
-         color="rgb(196,0,34)"
+         color="{$font.color}"
 	     font-family="{$title.fontset}"/>
     </t:titlepage-content>
 
@@ -1157,7 +1157,7 @@
 	     start-indent="0pt"
 	     font-size="&hsize4;"
 	     font-weight="bold"
-         color="rgb(196,0,34)"
+         color="{$font.color}"
 	     font-family="{$title.fontset}"/>
     </t:titlepage-content>
 
@@ -1188,7 +1188,7 @@
 	     start-indent="0pt"
 	     font-size="&hsize4;"
 	     font-weight="bold"
-         color="rgb(196,0,34)"
+         color="{$font.color}"
 	     font-family="{$title.fontset}"/>
     </t:titlepage-content>
 
@@ -1219,7 +1219,7 @@
 	     start-indent="0pt"
 	     font-size="&hsize4;"
 	     font-weight="bold"
-         color="rgb(196,0,34)"
+         color="{$font.color}"
 	     font-family="{$title.fontset}"/>
     </t:titlepage-content>
 
@@ -1250,7 +1250,7 @@
 	     start-indent="0pt"
 	     font-size="&hsize4;"
 	     font-weight="bold"
-         color="rgb(196,0,34)"
+         color="{$font.color}"
 	     font-family="{$title.fontset}"/>
     </t:titlepage-content>
 
@@ -1281,7 +1281,7 @@
 	     start-indent="0pt"
 	     font-size="&hsize4;"
 	     font-weight="bold"
-         color="rgb(196,0,34)"
+         color="{$font.color}"
 	     font-family="{$title.fontset}"/>
     </t:titlepage-content>
 
@@ -1312,7 +1312,7 @@
 	     start-indent="0pt"
 	     font-size="&hsize4;"
 	     font-weight="bold"
-         color="rgb(196,0,34)"
+         color="{$font.color}"
 	     font-family="{$title.fontset}"/>
     </t:titlepage-content>
 
